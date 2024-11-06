@@ -1,0 +1,53 @@
+
+.achaemenids-gallery {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: black;
+  }
+  
+  .artifact-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .artifact-thumbnail {
+    width: 100px;
+    height: auto;
+    transition: opacity 0.3s ease;
+  }
+  
+  .artifact-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .artifact-details h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .artifact-details p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .load-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

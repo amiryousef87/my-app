@@ -1,0 +1,79 @@
+
+.knowledge-base {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.knowledge-base-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.knowledge-base-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.categories button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.categories .active {
+  background-color: #000;
+  color: #fff;
+}
+
+.knowledge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.knowledge-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.knowledge-card-image {
+  width: 100%;
+  height: auto;
+}
+
+.knowledge-card-content {
+  padding: 10px;
+}
+
+.knowledge-card-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.knowledge-card-content p {
+  font-size: 14px;
+  color: #666;
+}
+
+.load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}

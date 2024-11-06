@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js  
+import React from "react";  
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";  
+import Knowledge from "./pages/Knowledge";  
+import Achaemenids from "./pages/Achaemenids";  
+import KnowledgeBase from "./components/KnowledgeBase";  
+import About from "./pages/About";  
+import Header from "./components/Header";  
+import "./App.css";  
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+function App() {  
+  return (  
+    <div>  
+      <video autoPlay loop muted className="video-background">  
+        <source src="background.mp4" type="video/mp4" />  
+      </video>  
+
+      <Router>  
+        <Header />  
+
+        <Routes>  
+          <Route path="/knowledge" element={<Knowledge />} />  
+          <Route path="/achaemenids" element={<Achaemenids />} />  
+          <Route path="/knowledge-base" element={<KnowledgeBase />} />  
+          <Route path="/about" element={<About />} />  
+        </Routes>  
+      </Router>  
+    </div>  
+  );  
+}  
 
 export default App;

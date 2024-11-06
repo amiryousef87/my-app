@@ -1,0 +1,76 @@
+/* Header.css */
+
+.header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #f8f8f8; 
+  padding: 10px;
+}
+
+.menu {
+  display: flex; 
+}
+
+.menu-item {
+  position: relative;
+  margin-right: 20px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: black;
+  padding: 10px; 
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none; 
+  position: absolute;
+  left: 0;
+  background-color: white; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  min-width: 150px;
+  z-index: 1;
+}
+
+.menu-item:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  color: black;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0; 
+}
+
+.language-selector {
+  margin-left: auto; 
+}
+
+.page-name {
+  color: black; 
+  font-size: 12px; 
+  margin-top: 5px; 
+  white-space: nowrap; 
+}
+.tour-button {
+  display: inline-block;
+  background-color: green;
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 8px;
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: background-color 0.3s;
+}
+
+.tour-button:hover {
+  background-color: darkgreen; 
+}
